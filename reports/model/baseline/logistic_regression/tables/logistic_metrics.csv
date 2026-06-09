@@ -1,0 +1,2 @@
+model,positive_class,train_size,valid_size,accuracy,balanced_accuracy,precision,recall,f1,roc_auc,average_precision
+LogisticRegression,Yes,475355,118839,0.8544164794385681,0.784752933539903,0.6836710924761239,0.6579979822889811,0.6705889072942252,0.9084281629154494,0.7270930836617756

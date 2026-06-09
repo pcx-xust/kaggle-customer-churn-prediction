@@ -1,0 +1,6 @@
+DummyClassifier
+DummyClassifier采用多数类策略进行预测，因此模型将所有验证集样本均预测为未流失客户。验证集Accuracy为0.774796，接近未流失客户在验证集中的占比，但该结果并不代表模型具有实际预测能力。
+
+从分类报告可以看出，模型对未流失客户的Recall为1.000000，但对流失客户的Precision、Recall和F1-score均为0。这说明Dummy模型完全无法识别真实流失客户。由于客户流失预测的核心目标是提前识别潜在流失客户，因此仅依赖Accuracy会严重高估模型效果。
+
+因此，后续模型评价应重点关注流失类的Recall、F1-score、Balanced Accuracy以及AUC等指标。只有当模型在这些指标上明显优于DummyClassifier时，才能说明模型真正从客户特征中学习到了有效的流失模式。
