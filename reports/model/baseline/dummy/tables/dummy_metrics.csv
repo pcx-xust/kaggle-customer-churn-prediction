@@ -1,0 +1,2 @@
+model,strategy,positive_class,train_size,valid_size,accuracy,balanced_accuracy,precision,recall,f1,roc_auc,average_precision
+DummyClassifier,most_frequent,Yes,475355,118839,0.7747961527781284,0.5,0.0,0.0,0.0,0.5,0.22520384722187162
