@@ -1,0 +1,6 @@
+﻿feature_type,n_features,features
+id_cols,1,id
+continuous_numeric_cols,3,"tenure, MonthlyCharges, TotalCharges"
+categorical_like_cols,16,"gender, Partner, Dependents, PhoneService, MultipleLines, InternetService, OnlineSecurity, OnlineBackup, DeviceProtection, TechSupport, StreamingTV, StreamingMovies, Contract, PaperlessBilling, PaymentMethod, SeniorCitizen"
+raw_categorical_cols,15,"gender, Partner, Dependents, PhoneService, MultipleLines, InternetService, OnlineSecurity, OnlineBackup, DeviceProtection, TechSupport, StreamingTV, StreamingMovies, Contract, PaperlessBilling, PaymentMethod"
+low_card_numeric_cols,1,SeniorCitizen
