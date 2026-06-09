@@ -1,0 +1,46 @@
+feature,importance
+num__TotalCharges,7987
+num__MonthlyCharges,6411
+num__tenure,5784
+cat__PaymentMethod_Electronic check,695
+num__SeniorCitizen,635
+cat__MultipleLines_No,546
+cat__PaperlessBilling_No,542
+cat__Dependents_No,453
+cat__gender_Female,433
+cat__Partner_No,416
+cat__Contract_Month-to-month,415
+cat__OnlineSecurity_No,386
+cat__DeviceProtection_No,361
+cat__Contract_One year,358
+cat__StreamingTV_No,358
+cat__PaymentMethod_Credit card (automatic),344
+cat__StreamingMovies_No,341
+cat__OnlineBackup_No,339
+cat__PaymentMethod_Bank transfer (automatic),330
+cat__TechSupport_No,313
+cat__PaymentMethod_Mailed check,295
+cat__Contract_Two year,280
+cat__PhoneService_No,213
+cat__InternetService_Fiber optic,190
+cat__MultipleLines_Yes,190
+cat__InternetService_DSL,165
+cat__StreamingTV_Yes,147
+cat__StreamingMovies_Yes,145
+cat__OnlineBackup_Yes,143
+cat__DeviceProtection_Yes,137
+cat__OnlineSecurity_Yes,135
+cat__PaperlessBilling_Yes,113
+cat__TechSupport_Yes,108
+cat__Dependents_Yes,73
+cat__gender_Male,69
+cat__Partner_Yes,67
+cat__InternetService_No,40
+cat__PhoneService_Yes,30
+cat__OnlineSecurity_No internet service,8
+cat__MultipleLines_No phone service,5
+cat__OnlineBackup_No internet service,0
+cat__TechSupport_No internet service,0
+cat__DeviceProtection_No internet service,0
+cat__StreamingMovies_No internet service,0
+cat__StreamingTV_No internet service,0
