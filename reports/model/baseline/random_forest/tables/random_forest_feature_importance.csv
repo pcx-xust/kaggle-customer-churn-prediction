@@ -1,0 +1,46 @@
+feature,importance
+num__TotalCharges,0.22804486770570742
+num__MonthlyCharges,0.19024614312062235
+num__tenure,0.15358605376681328
+cat__PaymentMethod_Electronic check,0.06573423300138122
+cat__Contract_Month-to-month,0.059880588824565865
+cat__InternetService_Fiber optic,0.03850786859462747
+cat__OnlineSecurity_No,0.033758727104327924
+cat__TechSupport_No,0.02202248909999283
+cat__Contract_Two year,0.014393736503609995
+cat__InternetService_DSL,0.012401524993723346
+num__SeniorCitizen,0.011984829326878506
+cat__OnlineBackup_No,0.011919079738374366
+cat__PaperlessBilling_Yes,0.010072170722896201
+cat__DeviceProtection_No,0.009686400570553666
+cat__Contract_One year,0.007818222365031638
+cat__gender_Female,0.007776963437479818
+cat__gender_Male,0.007744619077209362
+cat__PaperlessBilling_No,0.007002347845193567
+cat__Partner_Yes,0.006504421694642742
+cat__Partner_No,0.006013139836096075
+cat__MultipleLines_Yes,0.0057047587205825
+cat__OnlineSecurity_Yes,0.005652112564527744
+cat__PaymentMethod_Credit card (automatic),0.005565559244835526
+cat__StreamingTV_No,0.005298996054654272
+cat__StreamingTV_Yes,0.005279862396755691
+cat__PaymentMethod_Bank transfer (automatic),0.005154447178180152
+cat__OnlineBackup_Yes,0.005149719252335999
+cat__Dependents_Yes,0.005120930343768656
+cat__StreamingMovies_Yes,0.004932709308015911
+cat__StreamingMovies_No,0.004902636184907546
+cat__DeviceProtection_Yes,0.004897091292913833
+cat__TechSupport_Yes,0.0048597488811838105
+cat__MultipleLines_No,0.0048210220666303405
+cat__Dependents_No,0.004671008350498881
+cat__PaymentMethod_Mailed check,0.004424358279339658
+cat__StreamingMovies_No internet service,0.0032919580742493478
+cat__InternetService_No,0.002783677583952531
+cat__StreamingTV_No internet service,0.0025507017401114333
+cat__OnlineSecurity_No internet service,0.0025249981594761897
+cat__OnlineBackup_No internet service,0.0022255772201973164
+cat__DeviceProtection_No internet service,0.0017670383581726067
+cat__TechSupport_No internet service,0.001569181242270054
+cat__PhoneService_Yes,0.0006037550231558135
+cat__PhoneService_No,0.0005925279272772685
+cat__MultipleLines_No phone service,0.0005571972222793799

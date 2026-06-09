@@ -1,6 +1,13 @@
-DummyClassifier
+## 1.DummyClassifier
 DummyClassifier采用多数类策略进行预测，因此模型将所有验证集样本均预测为未流失客户。验证集Accuracy为0.774796，接近未流失客户在验证集中的占比，但该结果并不代表模型具有实际预测能力。
 
 从分类报告可以看出，模型对未流失客户的Recall为1.000000，但对流失客户的Precision、Recall和F1-score均为0。这说明Dummy模型完全无法识别真实流失客户。由于客户流失预测的核心目标是提前识别潜在流失客户，因此仅依赖Accuracy会严重高估模型效果。
 
 因此，后续模型评价应重点关注流失类的Recall、F1-score、Balanced Accuracy以及AUC等指标。只有当模型在这些指标上明显优于DummyClassifier时，才能说明模型真正从客户特征中学习到了有效的流失模式。
+
+## 2.LogisticRegression
+LogisticRegression作为第一个真正利用客户特征进行学习的基准模型，在验证集上取得了Accuracy=0.854416、Balanced Accuracy=0.784753、ROC-AUC=0.908428、Average Precision=0.727093的结果，明显优于DummyClassifier。与DummyClassifier完全无法识别流失客户不同，LogisticRegression对流失客户的Recall达到0.657998，F1-score达到0.670589，说明客户合约、费用、服务配置和使用时长等变量中确实包含有效的流失预测信息。
+
+从混淆矩阵来看，模型在26763名真实流失客户中成功识别17610名，漏判9153名，说明模型已经具备一定流失客户识别能力，但仍存在约34.20%的流失客户未被识别。对于客户流失预测任务，漏判流失客户可能带来较高业务损失，因此后续模型仍需要进一步提升流失类的召回率和F1-score。
+
+系数分析显示，Month-to-month合约、Electronic check支付方式、Fiber optic互联网服务、较高MonthlyCharges以及SeniorCitizen等特征会提高模型预测客户流失的倾向；tenure、Two year合约、DSL互联网服务、自动付款方式以及Dependents=Yes等特征会降低模型预测客户流失的倾向。该结果与EDA阶段发现基本一致，说明逻辑回归模型具有较好的解释一致性。但由于该模型属于相关性预测模型，系数方向不能直接解释为因果关系。
