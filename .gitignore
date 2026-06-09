@@ -216,3 +216,27 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Project data and model artifacts
+data/raw/*
+!data/raw/.gitkeep
+
+data/processed/*
+!data/processed/.gitkeep
+
+submissions/*.csv
+!submissions/.gitkeep
+
+models/*
+!models/.gitkeep
+
+*.pkl
+*.joblib
+*.model
+*.bin
+
+kaggle.json
+.env
+.venv/
+__pycache__/
+.ipynb_checkpoints/
